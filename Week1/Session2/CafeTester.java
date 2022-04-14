@@ -1,6 +1,6 @@
 public class CafeTester {
     
-    public static void main(String[] args) {
+    public static void main(String[] bananas) {
        Cafe myCafe=new Cafe();
        
        myCafe.chaiLatte();
@@ -9,10 +9,10 @@ public class CafeTester {
 
       System.out.println(myCafe.customerList());
       myCafe.customerFavorites();
-
+      String username=System.console().readLine();
     }
     // Array
-    // ArrayList
+    // ArrayLists
     // HashMap
 
     
