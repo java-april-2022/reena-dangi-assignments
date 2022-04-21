@@ -15,7 +15,6 @@ public class HomeController {
 		String city="Chicago";
 		studentModel.addAttribute("studentName",student);
 		studentModel.addAttribute("city",city);
-		
 		return "student.jsp";
 	}
 	
