@@ -11,9 +11,9 @@
 <body>
 	<h1>All stacks:</h1>
 	<ul>
-		<c:forEach items="${myStacks}" var="stack">
+	<c:forEach items="${myStacks}" var="stack">
 			<li><c:out value="${stack}"></c:out></li>
-		</c:forEach>
+		</c:forEach> 
 	</ul>
 	<a href="/student">Student</a>
 	
