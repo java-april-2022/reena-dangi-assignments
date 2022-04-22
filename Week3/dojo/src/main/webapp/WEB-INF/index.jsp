@@ -16,6 +16,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h2>This is going to GitHub using STS!!</h2>
 	<h1>Dojo Form</h1>
 	<form action="/results" method="POST">
 		<div>
