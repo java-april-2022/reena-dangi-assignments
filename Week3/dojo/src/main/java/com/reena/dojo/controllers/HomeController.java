@@ -23,7 +23,7 @@ public class HomeController {
 			@RequestParam String email,
 			@RequestParam String program,
 			Model dojoModel) {
-		
+//		Updated		
 		dojoModel.addAttribute("firstName",firstName);
 		dojoModel.addAttribute("email",email);
 		dojoModel.addAttribute("program",program);
