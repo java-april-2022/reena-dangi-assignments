@@ -9,13 +9,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>All stacks:</h1>
+	<h1>All stacks</h1>
 	<ul>
 	<c:forEach items="${myStacks}" var="stack">
 			<li><c:out value="${stack}"></c:out></li>
 		</c:forEach> 
 	</ul>
 	<a href="/student">Student</a>
+	
+	
 	
 </body>
 </html>
