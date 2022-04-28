@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name="arts")
@@ -13,8 +15,15 @@ public class Art {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@NotBlank
+	@Size(min = 2, max = 200, message="Are you silly, no title?")
 	private String title;
+
+	@NotBlank
+	@Size(min = 2, max = 200)
 	private String description;
+	
 	private String url;
 	
 	

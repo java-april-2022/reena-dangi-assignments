@@ -22,9 +22,23 @@ public class ArtService {
 		//Business logic
 		return artRepo.findAll();
 	}
-	
-//	Find all arts
+
 //	Create new Art
+	public void createArt(Art art) {
+		artRepo.save(art);
+	}
+	
 //  Update Art	
+	public void updateArt(Art art) {
+		artRepo.save(art);
+	}
+	
 //  Delete Art
+	public void deleteArt(Long id) {
+		artRepo.deleteById(id);
+	}
+//	GetArtDetails 
+	public Art artDetails(Long id) {
+		return artRepo.findById(id).orElse(null);
+	}
 }
